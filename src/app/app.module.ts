@@ -31,6 +31,10 @@ const appRoutes: Routes = [
     path: 'page3',
     component: Page3Component
   },
+  {
+    path: '**',
+    component: HomeComponent
+  }
 
 ];
 

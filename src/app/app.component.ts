@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,13 +9,11 @@ import { Router, ActivatedRoute } from '@angular/router';
 
 
 export class AppComponent implements OnInit {
-  title = 'app';
-
-  constructor(private route:ActivatedRoute) {
-    console.log(route);
-  }
 
   ngOnInit () {
+    console.log(window.location.href)
   }
 
+  
 }
+

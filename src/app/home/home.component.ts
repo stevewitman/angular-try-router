@@ -9,8 +9,16 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  bookmarks = [
+    { '100': 'http://stevewitman.com/wpfree.html'},
+    { 'meetup': 'https://www.meetup.com/angular-boulder/'},
+  ]
+
   ngOnInit() {
-      console.log('here')
+    const tryUrl = window.location.href
+    const n = tryUrl.lastIndexOf('/')
+    const shortUrl = tryUrl.slice(n+1)
+    console.log(this.bookmarks)
   }
 
 }
